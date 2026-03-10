@@ -1,18 +1,17 @@
 # Unity generated
-Library/
-Temp/
-Obj/
-Logs/
-MemoryCaptures/
-Recordings/
-UserSettings/
-
-# Build output
-Build/
-Builds/
-build/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
 
 # Auto-generated VS/Rider project files
+ExportedObj/
+.consulo/
 *.csproj
 *.unityproj
 *.sln
@@ -28,25 +27,40 @@ build/
 *.mdb
 *.opendb
 *.VC.db
+.vs/
+.gradle/
 
 # Unity3D generated meta files are only generated for files not already tracked
 # *.meta
 
-# Unity3D Generated File On Crash Reports
+# Unity3D generated file on crash reports
 sysinfo.txt
+mono_crash.*
 
 # Builds
 *.apk
 *.aab
 *.unitypackage
+*.unitypackage.meta
 *.app
 
 # Crashlytics generated file
 crashlytics-build.properties
 
-# Packed Addressables
-/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+# Addressables
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
 
-# Temporary auto-generated Android Assets
-/[Aa]ssets/[Ss]treamingAssets/aa.meta
-/[Aa]ssets/[Ss]treamingAssets/aa/*
+# Visual Scripting
+/[Aa]ssets/Unity.VisualScripting.Generated/
+
+# Blender
+*.blend1
+*.blend1.meta
+
+# TestRunner
+InitTestScene*.unity*
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
