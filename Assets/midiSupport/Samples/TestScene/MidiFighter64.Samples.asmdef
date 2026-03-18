@@ -4,7 +4,9 @@
     "references": [
         "MidiFighter64.Runtime",
         "Unity.TextMeshPro",
-        "Unity.RenderPipelines.Universal.Runtime"
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.Cinemachine"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

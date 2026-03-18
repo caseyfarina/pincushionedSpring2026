@@ -51,7 +51,12 @@ namespace MidiFighter64.Samples
 
         void HandleButton(GridButton btn, bool isNoteOn)
         {
-            var go = _instances[btn.linearIndex];
+            // Col 8 = floor navigation; row 8 col 1-2 = close-up camera controls
+            if (btn.col == 8) return;
+            if (btn.row == 8 && btn.col <= 2) return;
+            int idx = btn.linearIndex;
+            if (idx < 0 || idx >= BUTTON_COUNT) return;
+            var go = _instances[idx];
             if (go != null) go.SetActive(isNoteOn);
         }
     }
